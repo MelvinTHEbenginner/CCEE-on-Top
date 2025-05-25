@@ -1,7 +1,7 @@
-// Script principal pour la page d'accueil
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Animation du titre
+    // Animation du titre avec les pulsions
     const title = document.querySelector('h1');
     if (title) {
         setTimeout(() => {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navAuthSection = document.querySelector('nav .hidden.md\\:flex.space-x-6');
     
     if (isLoggedIn && navAuthSection) {
-        // Modifier les liens de navigation pour un utilisateur connecté
+        // Modifier les liens la navigation pour un utilisateur connecté
         navAuthSection.innerHTML = `
             <a href="dashboard/" class="hover:text-yellow-300">Tableau de bord</a>
             <a href="dashboard/tickets.html" class="hover:text-yellow-300">Mes tickets</a>
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         // Changer le bouton d'inscription en déconnexion
-        const registerBtn = document.querySelector('nav a[href="auth/register.html"]');
+        const registerBtn = document.querySelector('nav a[href="auth/register.html"]'); //selection
         if (registerBtn) {
             registerBtn.outerHTML = `
                 <button id="logoutBtn" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </button>
             `;
             
-            // Gérer la déconnexion
+            
             document.getElementById('logoutBtn').addEventListener('click', function() {
                 localStorage.removeItem('userLoggedIn');
                 localStorage.removeItem('userName');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
 
-    // Effet de scroll doux pour les ancres
+    // pour un effet de scrolling 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 50);
     }
 
-    // Ajouter la date de l'événement dans le footer
+    // Ajouter la date de l'événement dans le pie du site
     const eventDateElement = document.getElementById('eventDate');
     if (eventDateElement) {
         const eventDate = new Date('2025-06-30');
