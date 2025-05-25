@@ -1,0 +1,69 @@
+
+
+/* Animation très très sortante pour le titre de la tombola */
+@keyframes pulse-glow {
+    0% { text-shadow: 0 0 5px rgba(234, 179, 8, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(234, 179, 8, 0.8); }
+    100% { text-shadow: 0 0 5px rgba(234, 179, 8, 0.5); }
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 2s infinite;
+}
+
+
+.prize-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Style pour les cartes yu gi oh */
+.prize-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-overlay {
+    backdrop-filter: blur(5px);
+}
+
+/* Style pour le loader ( bon ça c'est generer je sais pas comment mais ça fonctionne ) */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Adaptation mobile genre responsive */
+@media (max-width: 768px) {
+    .mobile-stack {
+        flex-direction: column;
+    }
+    
+    .mobile-center {
+        text-align: center;
+    }
+}
+
+/* Effet de hover pour les boutons de mr Daryl */
+.btn-hover-effect {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour les entrées de mr Daryl */
+.custom-input {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.custom-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
