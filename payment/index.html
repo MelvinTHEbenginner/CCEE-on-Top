@@ -13,7 +13,7 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-4">
-                    <img src="../../assets/images/logo.png" alt="Logo CCEE" class="h-10">
+                    <img src="../assets/images/logo.png" alt="Logo CCEE" class="h-10">
                     <span class="font-bold text-xl">CCEE ESATIC</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-    <!-- Payment Content -->
+    <!-- Contenu du bloc de paiement -->
     <div class="max-w-6xl mx-auto px-4 py-8">
         <div class="mb-8">
             <h1 class="text-3xl font-bold text-blue-900">Acheter un ticket</h1>
@@ -38,7 +38,7 @@
         </div>
         
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Payment Form -->
+            <!-- Paiement -->
             <div class="md:col-span-2">
                 <div class="bg-white rounded-xl shadow-md p-6 mb-6">
                     <h2 class="text-xl font-semibold mb-4">Informations de paiement</h2>
@@ -48,15 +48,15 @@
                             <label class="block text-gray-700 font-medium mb-2">Méthode de paiement</label>
                             <div class="grid grid-cols-3 gap-4">
                                 <button type="button" class="payment-method border-2 border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-500 transition duration-300" data-method="orange">
-                                    <img src="../../assets/images/orange-money.png" alt="Orange Money" class="h-8 mb-2">
+                                    <img src="../assets/images/orange-money.png" alt="Orange Money" class="h-8 mb-2">
                                     <span>Orange Money</span>
                                 </button>
                                 <button type="button" class="payment-method border-2 border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-500 transition duration-300" data-method="mtn">
-                                    <img src="../../assets/images/mtn-momo.png" alt="MTN MoMo" class="h-8 mb-2">
+                                    <img src="../assets/images/mtn-momo.png" alt="MTN MoMo" class="h-8 mb-2">
                                     <span>MTN MoMo</span>
                                 </button>
                                 <button type="button" class="payment-method border-2 border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-500 transition duration-300" data-method="wave">
-                                    <img src="../../assets/images/wave.png" alt="Wave" class="h-8 mb-2">
+                                    <img src="../assets/images/wave.png" alt="Wave" class="h-8 mb-2">
                                     <span>Wave</span>
                                 </button>
                             </div>
@@ -94,13 +94,7 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-center mb-6">
-                            <input id="termsCheckbox" name="termsCheckbox" type="checkbox" required
-                                   class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
-                            <label for="termsCheckbox" class="ml-2 block text-sm text-gray-700">
-                                J'accepte les <a href="#" class="text-blue-500 hover:text-blue-700">conditions générales</a> de la tombola
-                            </label>
-                        </div>
+                        
                         
                         <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300">
                             Payer maintenant
@@ -131,7 +125,7 @@
                 </div>
             </div>
             
-            <!-- Order Summary -->
+            <!-- Résumé de la commande -->
             <div>
                 <div class="bg-white rounded-xl shadow-md p-6 sticky top-8">
                     <h2 class="text-xl font-semibold mb-4">Résumé de la commande</h2>
@@ -156,15 +150,15 @@
                         <ul class="text-sm space-y-2">
                             <li class="flex items-center">
                                 <i class="fas fa-trophy text-yellow-500 mr-2"></i>
-                                <span>1er Prix: Ordinateur portable</span>
+                                <span>1er Prix: TELEPHONE</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-medal text-gray-500 mr-2"></i>
-                                <span>2ème Prix: Smartphone</span>
+                                <span>2ème Prix: TABLETTE</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-award text-amber-600 mr-2"></i>
-                                <span>3ème Prix: Tablette graphique</span>
+                                <span>3ème Prix: Kantic</span>
                             </li>
                             <li class="flex items-center">
                                 <i class="fas fa-gift text-purple-500 mr-2"></i>
@@ -177,7 +171,7 @@
         </div>
     </div>
 
-    <!-- Payment Processing Modal -->
+    <!-- Paiement en cours -->
     <div id="paymentModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
         <div class="bg-white rounded-xl p-6 max-w-md w-full">
             <div class="text-center">
@@ -197,7 +191,7 @@
         </div>
     </div>
 
-    <!-- Payment Success Modal -->
+    <!-- Modal de succès -->
     <div id="successModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
         <div class="bg-white rounded-xl p-6 max-w-md w-full text-center">
             <div class="mb-4">
@@ -220,6 +214,6 @@
         </div>
     </div>
 
-    <script src="../../assets/js/payment.js"></script>
+    <script src="../assets/js/payment.js"></script>
 </body>
 </html>

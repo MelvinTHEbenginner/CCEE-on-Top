@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         logoutBtn.addEventListener('click', function() {
             localStorage.removeItem('userLoggedIn');
             localStorage.removeItem('userName');
-            window.location.href = '../../auth/login.html';
+            window.location.href = '../auth/login.html';
         });
     }
     
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const protectedPages = ['/dashboard/', '/dashboard/tickets.html', '/payment/'];
     if (protectedPages.some(page => window.location.pathname.includes(page))) {
         if (!localStorage.getItem('userLoggedIn')) {
-            window.location.href = '../../auth/login.html';
+            window.location.href = '../auth/login.html';
         }
     }
 });
