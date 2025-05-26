@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('userName', user.fullname);
             localStorage.setItem('userEmail', user.email);
             localStorage.setItem('userPhone', user.phone);
-            window.location.href = '../dashboard/';
+            window.location.href = '../dashboard/index.php';
         });
     }
 
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.removeItem('userName');
             localStorage.removeItem('userEmail');
             localStorage.removeItem('userPhone');
-            window.location.href = '../auth/login.html';
+            window.location.href = '../auth/login.php';
         });
     }
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const protectedPages = ['/dashboard/', '/dashboard/tickets.html', '/payment/'];
     if (protectedPages.some(page => window.location.pathname.includes(page))) {
         if (!localStorage.getItem('userLoggedIn')) {
-            window.location.href = '../auth/login.html';
+            window.location.href = '../auth/login.php';
         }
     }
 });

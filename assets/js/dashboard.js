@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Compte à rebours pour l'événement
     function updateCountdown() {
         const now = new Date();
-        const eventDate = new Date('2025-06-30T19:00:00');
+        const eventDate = new Date('2025-06-08T22:00:00');
         const diff = eventDate - now;
         
         if (diff <= 0) {

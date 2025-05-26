@@ -1,21 +1,21 @@
-// Configuration des numéros de paiement
+// Configuration des méthodes de paiement
 const PAYMENT_CONFIG = {
     orange: {
-      number: "0788045849", 
-      apiUrl: "https://api.orange.com/payment",
-      merchantCode: "YOUR_ORANGE_MERCHANT_CODE"
+        name: 'Orange Money',
+        placeholder: '07XXXXXXXX',
+        pattern: '^07[0-9]{8}$'
     },
     mtn: {
-      number: "0500000000", 
-      apiUrl: "https://api.mtn.com/v1/payments",
-      apiKey: "YOUR_MTN_API_KEY"
+        name: 'MTN MoMo',
+        placeholder: '05XXXXXXXX',
+        pattern: '^05[0-9]{8}$'
     },
     wave: {
-      number: "0100000000", 
-      apiUrl: "https://api.wave.com/payments",
-      clientId: "YOUR_WAVE_CLIENT_ID"
+        name: 'Wave',
+        placeholder: '01XXXXXXXX',
+        pattern: '^01[0-9]{8}$'
     }
-  };
+};
   
   document.addEventListener('DOMContentLoaded', function() {
       // Initialisation des éléments
@@ -59,33 +59,34 @@ const PAYMENT_CONFIG = {
           return amount.toLocaleString('fr-FR') + ' FCFA';
       };
   
-      const simulatePayment = (method, amount, phone, callback) => {
-          // En production, remplacer par un vrai appel API
-          console.log(`Envoi de ${amount}FCFA au ${phone} via ${method}`);
-          
-          // Simulation de délai de paiement
-          let progress = 0;
-          paymentInterval = setInterval(() => {
-              progress += 5;
-              elements.paymentProgress.style.width = `${progress}%`;
-              
-              if (progress >= 100) {
-                  clearInterval(paymentInterval);
-                  callback(true);
+      const processPayment = async (method, amount, phone, quantity) => {
+          try {
+              const response = await fetch('../payment/process.php', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                      paymentMethod: method,
+                      phoneNumber: phone,
+                      quantity: quantity,
+                      amount: amount
+                  })
+              });
+
+              if (!response.ok) {
+                  throw new Error('Erreur lors du paiement');
               }
-          }, 300);
+
+              const data = await response.json();
+              return data;
+          } catch (error) {
+              console.error('Erreur:', error);
+              throw error;
+          }
       };
   
-      const generateTicket = (quantity) => {
-          const tickets = [];
-          for (let i = 0; i < quantity; i++) {
-              tickets.push({
-                  id: 'T-' + Math.floor(Math.random() * 10000),
-                  date: new Date().toISOString().split('T')[0]
-              });
-          }
-          return tickets;
-      };
+
   
       // Événements
       elements.decreaseQuantity.addEventListener('click', () => {
@@ -123,7 +124,7 @@ const PAYMENT_CONFIG = {
           });
       });
   
-      elements.paymentForm.addEventListener('submit', function(e) {
+      elements.paymentForm.addEventListener('submit', async function(e) {
           e.preventDefault();
           
           if (!elements.paymentMethod.value) {
@@ -152,23 +153,47 @@ const PAYMENT_CONFIG = {
           
           elements.paymentModal.classList.remove('hidden');
   
-          // Simuler le paiement
-          simulatePayment(method, total, phone, (success) => {
-              if (success) {
-                  elements.paymentModal.classList.add('hidden');
-                  const tickets = generateTicket(quantity);
-                  
-                  // Sauvegarder les tickets (simulation)
-                  localStorage.setItem('userTickets', JSON.stringify(tickets));
-                  
-                  // Afficher le premier ticket comme confirmation
-                  elements.successQuantity.textContent = quantity;
-                  elements.successTicketId.textContent = tickets[0].id;
-                  elements.successQrCode.src = 
-                      `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=CCEE-TOMBOLA-${tickets[0].id}`;
-                  elements.successModal.classList.remove('hidden');
-              }
-          });
+          // Afficher le modal de paiement
+          elements.paymentModal.classList.remove('hidden');
+          elements.paymentProgress.style.width = '0%';
+
+          // Simuler la progression
+          let progress = 0;
+          paymentInterval = setInterval(() => {
+              progress = Math.min(progress + 5, 90);
+              elements.paymentProgress.style.width = `${progress}%`;
+          }, 300);
+
+          try {
+              // Traiter le paiement
+              const result = await processPayment(method, total, phone, quantity);
+              
+              // Compléter la barre de progression
+              clearInterval(paymentInterval);
+              elements.paymentProgress.style.width = '100%';
+              
+              // Attendre un peu pour montrer la progression complète
+              await new Promise(resolve => setTimeout(resolve, 500));
+              
+              // Cacher le modal de paiement
+              elements.paymentModal.classList.add('hidden');
+              
+              // Afficher le modal de succès
+              elements.successQuantity.textContent = quantity;
+              elements.successTicketId.textContent = result.tickets[0].code;
+              elements.successQrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=CCEE-TOMBOLA-${result.tickets[0].code}`;
+              elements.successModal.classList.remove('hidden');
+              
+              // Rediriger vers la page des tickets après 3 secondes
+              setTimeout(() => {
+                  window.location.href = '../dashboard/tickets.php';
+              }, 3000);
+              
+          } catch (error) {
+              clearInterval(paymentInterval);
+              elements.paymentModal.classList.add('hidden');
+              alert('Erreur lors du paiement : ' + error.message);
+          }
       });
   
       elements.cancelPayment.addEventListener('click', () => {
