@@ -1,22 +1,18 @@
-// Gestion des tickets
 document.addEventListener('DOMContentLoaded', function() {
-    // Simuler des tickets achetés c'est mieux 
-    const tickets = [
-        { id: 'T-' + Math.floor(Math.random() * 10000), date: '2025-05-15' },
-        { id: 'T-' + Math.floor(Math.random() * 10000), date: '2025-05-18' }
-    ];
-    
+    // Récupérer les tickets de l'utilisateur
+    const userTickets = JSON.parse(localStorage.getItem('userTickets')) || [];
     const ticketsList = document.getElementById('ticketsList');
     const noTicketsMessage = document.getElementById('noTicketsMessage');
     const totalTickets = document.getElementById('totalTickets');
-    
-    if (tickets.length > 0) {
+
+    // Afficher mes tickets la 
+    if (userTickets.length > 0) {
         noTicketsMessage.style.display = 'none';
-        totalTickets.textContent = tickets.length;
+        totalTickets.textContent = userTickets.length;
         
-        tickets.forEach(ticket => {
+        userTickets.forEach(ticket => {
             const ticketElement = document.createElement('div');
-            ticketElement.className = 'p-6 flex justify-between items-center';
+            ticketElement.className = 'p-6 flex justify-between items-center hover:bg-gray-50';
             ticketElement.innerHTML = `
                 <div>
                     <h3 class="font-bold">Ticket #${ticket.id}</h3>
@@ -31,27 +27,27 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         totalTickets.textContent = '0';
     }
-    
+
+    // Gestion du QR Code
     const qrModal = document.getElementById('qrModal');
     const closeQrModal = document.getElementById('closeQrModal');
     const qrTicketId = document.getElementById('qrTicketId');
     const qrCodeImage = document.getElementById('qrCodeImage');
     const downloadQrBtn = document.getElementById('downloadQrBtn');
-    
+
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains('view-qr-btn')) {
             const ticketId = e.target.getAttribute('data-ticket-id');
             qrTicketId.textContent = ticketId;
-            qrCodeImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=CCEE-TOMBOLA-${ticketId}-${localStorage.getItem('userName')}`;
+            qrCodeImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=CCEE-TOMBOLA-${ticketId}`;
             qrModal.classList.remove('hidden');
         }
     });
-    
-    
+
     closeQrModal.addEventListener('click', function() {
         qrModal.classList.add('hidden');
     });
-    
+
     downloadQrBtn.addEventListener('click', function() {
         const link = document.createElement('a');
         link.href = qrCodeImage.src;
