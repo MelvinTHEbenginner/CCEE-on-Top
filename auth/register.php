@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+<?php
+include '../config.php';
+    if (isset($_POST['fullname'], $_POST['email'], $_POST['phone'], $_POST['password'])) {
+        $fullname = $_POST['fullname'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+        $stmt = $conn->prepare('INSERT INTO users (fullname, email, phone, password_hash) VALUES (?, ?, ?, ?)');
+        $stmt->bind_param('ssss', $fullname, $email, $phone, $password);
+        $stmt->execute();
+        $stmt->close();
+        header('Location: ../dashboard/index.php');
+        exit;
+    }
+    
+?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +33,7 @@
                 <p class="mt-2">Créez votre compte pour participer à la tombola</p>
             </div>
             
-            <form id="registerForm" class="space-y-6">
+            <form id="registerForm" class="space-y-6"  method="post">
                 <div>
                     <label for="fullname" class="block text-sm font-medium mb-1">Nom complet</label>
                     <input type="text" id="fullname" name="fullname" required
@@ -41,19 +58,19 @@
                            class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
                 </div>
                 
-                <div>
+                <!-- <div>
                     <label for="confirmPassword" class="block text-sm font-medium mb-1">Confirmer le mot de passe</label>
                     <input type="password" id="confirmPassword" name="confirmPassword" required
                            class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
-                </div>
+                </div> -->
                 
-                <div class="flex items-center">
+                <!-- <div class="flex items-center">
                     <input id="terms" name="terms" type="checkbox" required
                            class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-white/30 rounded">
                     <label for="terms" class="ml-2 block text-sm">
                         J'accepte les <a href="#" class="text-yellow-400 hover:text-yellow-300">conditions d'utilisation</a>
                     </label>
-                </div>
+                </div> -->
                 
                 <div>
                     <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300">
@@ -65,12 +82,12 @@
             <div class="mt-6 text-center">
                 <p class="text-sm">
                     Déjà un compte ?
-                    <a href="login.html" class="font-medium text-yellow-400 hover:text-yellow-300">Se connecter</a>
+                    <a href="login.php" class="font-medium text-yellow-400 hover:text-yellow-300">Se connecter</a>
                 </p>
             </div>
         </div>
     </div>
 
-    <script src="../assets/js/auth.js"></script>
+    <!-- <script src="../assets/js/auth.js"></script> -->
 </body>
 </html>

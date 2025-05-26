@@ -19,9 +19,9 @@
                 <a href="#" class="hover:text-yellow-300">Accueil</a>
                 <a href="#about" class="hover:text-yellow-300">À propos</a>
                 <a href="#prizes" class="hover:text-yellow-300">Lots</a>
-                <a href="auth/login.html" class="hover:text-yellow-300">Connexion</a>
+                <a href="auth/login.php" class="hover:text-yellow-300">Connexion</a>
             </div>
-            <a href="auth/register.html" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
+            <a href="auth/register.php" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
                 S'inscrire
             </a>
         </div>
@@ -35,7 +35,7 @@
             </h1>
             <p class="text-xl mb-8">Participez à la grande tombola de la communauté catholique des étudiants de l'ESATIC et tentez de gagner des lots exceptionnels !</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="auth/register.html" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                <a href="auth/register.php" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full text-lg transition duration-300">
                     Acheter un ticket (1000 FCFA)
                 </a>
                 <a href="#how-it-works" class="bg-transparent hover:bg-white/10 border-2 border-white py-3 px-8 rounded-full text-lg transition duration-300">
@@ -103,16 +103,16 @@
                     <ul class="space-y-2">
                         <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
-                            <span>Daryl personnalisé</span>
+                            <span>Smartphone </span>
                         </li>
-                        <li class="flex items-center">
+                        <!-- <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
                             <span>Sa filleule</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
                             <span>Kantic</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 
@@ -125,12 +125,12 @@
                     <ul class="space-y-2">
                         <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
-                            <span>Smartphone dernier cri</span>
+                            <span>Mixeur</span>
                         </li>
-                        <li class="flex items-center">
+                        <!-- <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
                             <span>Abonnement CCEE PRENIUM</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 
@@ -143,12 +143,12 @@
                     <ul class="space-y-2">
                         <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
-                            <span>Tablette graphique</span>
+                            <span>Manette PS4</span>
                         </li>
-                        <li class="flex items-center">
+                        <!-- <li class="flex items-center">
                             <i class="fas fa-check-circle mr-2"></i>
                             <span>Bon d'achat</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -159,7 +159,7 @@
     <footer class="bg-black/50 py-8 px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
             <div>
-                <h3 class="text-xl font-bold mb-4">CCEE ESATIC</h3>
+                <h3 class="text-xl font-bold mb-4">CCEE </h3>
                 <p>Communauté Catholique des Étudiants de l'ESATIC.</p>
                 <p>Partage, foi et excellence.</p>
             </div>
@@ -172,13 +172,13 @@
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-bold mb-4">Contact pour toutes petites en Christ </h3>
-                <p><i class="fas fa-envelope mr-2"></i> Daryl@chouchou.edu</p>
-                <p><i class="fas fa-phone mr-2"></i> +225 S/O Jesus Christ</p>
+                <h3 class="text-xl font-bold mb-4">Contacts </h3>
+                <p><i class="fas fa-envelope mr-2"></i> cceeesatic@gmail.com</p>
+                <p><i class="fas fa-phone mr-2"></i> +225 0101654063 (NUMERO DE LA PRESIDENTE)</p>
             </div>
         </div>
         <div class="max-w-6xl mx-auto pt-8 mt-8 border-t border-white/20 text-center">
-            <p>&copy; 2025 CCEE ESATIC - Tous droits réservés toi tu connais pas ? meilleur bureau on a dit </p>
+            <p>&copy; 2024/25 CCEE  </p>
         </div>
     </footer>
 
