@@ -1,19 +1,8 @@
 // Tableau de bord
 document.addEventListener('DOMContentLoaded', function() {
+    // Le nom d'utilisateur et le nombre de tickets sont maintenant gérés par PHP
     
-    const userNameElement = document.getElementById('userName');
-    if (userNameElement) {
-        userNameElement.textContent = localStorage.getItem('userName') || 'Utilisateur';
-    }
-    
-    const ticketsCount = Math.floor(Math.random() * 5) + 1;
-    document.getElementById('ticketsCount').textContent = ticketsCount;
-    
-    // Calculer les chances de gagner (cest juste pour l'effet tu vois non )
-    const winChance = (ticketsCount / 1000 * 100).toFixed(2);
-    document.getElementById('winChance').textContent = winChance + '%';
-    
-    // Compte à rebours pour l'événement comme dans fortnite ( ici cest generé)
+    // Compte à rebours pour l'événement
     function updateCountdown() {
         const now = new Date();
         const eventDate = new Date('2025-06-30T19:00:00');
