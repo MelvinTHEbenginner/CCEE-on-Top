@@ -1,9 +1,6 @@
 <?php
 // Ce fichier peut aussi être nommé index.php
-$api_key = '4223232976834922ac0cca7.40542965'; // Remplace par ta clé API CinetPay
-$site_id = '105896366'; // Remplace par ton site ID CinetPay
-$notify_url = 'https://ccee.infinityfreeapp.com/notification-cinetpay.php'; // Optionnel
-$return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
+
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +11,6 @@ $return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
     <title>Paiement - Tombola CCEE</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
 </head>
 <body class="bg-gray-100 min-h-screen">
 
@@ -101,6 +97,12 @@ $return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
                     <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300">
                         Payer maintenant
                     </button>
+                    <div id="selectedImageContainer" class="mt-6 hidden text-center">
+                        <img id="selectedImage" src="" alt="Méthode sélectionnée" class="h-24 mx-auto">
+                    </div>
+                    <div class="mt-6 text-center">
+                        <img id="selectedPaymentImage" src="../assets/images/orange-money.png" alt="Méthode sélectionnée" class="mx-auto h-16 hidden">
+                    </div>
                 </form>
             </div>
         </div>
@@ -128,14 +130,41 @@ $return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
     const summaryQuantity = document.getElementById('summaryQuantity');
     const summaryTotal = document.getElementById('summaryTotal');
     const unitPrice = 1000;
+    const selectedImageContainer = document.getElementById('selectedImageContainer');
+    const selectedImage = document.getElementById('selectedImage');
+
 
     paymentMethods.forEach(btn => {
-        btn.addEventListener('click', () => {
-            paymentMethods.forEach(b => b.classList.remove('border-blue-500'));
-            btn.classList.add('border-blue-500');
-            paymentMethodInput.value = btn.dataset.method;
-        });
+    btn.addEventListener('click', () => {
+        // Style
+        paymentMethods.forEach(b => b.classList.remove('border-blue-500'));
+        btn.classList.add('border-blue-500');
+
+        // Méthode de paiement
+        const method = btn.dataset.method;
+        paymentMethodInput.value = method;
+
+        // Affichage de l’image selon la méthode sélectionnée
+        let imagePath = '';
+        switch(method) {
+            case 'OM':
+                imagePath = '../assets/images/om-selected.png';
+                break;
+            case 'MOMO':
+                imagePath = '../assets/images/momo-selected.png';
+                break;
+            case 'WAVE':
+                imagePath = '../assets/images/wave-selected.png';
+                break;
+        }
+
+        // Afficher l'image
+        if (imagePath) {
+            selectedImage.src = imagePath;
+            selectedImageContainer.classList.remove('hidden');
+        }
     });
+});
 
     function updateTotal() {
         const qty = parseInt(ticketQuantity.value);
@@ -162,7 +191,7 @@ $return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
     document.getElementById('paymentForm').addEventListener('submit', function(e) {
         e.preventDefault();
 
-        const phone = document.getElementById('phoneNumber').value;
+        const phone = document.getElementById('phoneNumber').value.trim();
         const method = document.getElementById('paymentMethod').value;
         const qty = parseInt(ticketQuantity.value);
         const amount = qty * unitPrice;
@@ -172,44 +201,26 @@ $return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
             return;
         }
 
+        if (!phone || phone.length < 8) {
+            alert("Numéro de téléphone invalide.");
+            return;
+        }
+
+        if (isNaN(amount) || amount <= 0) {
+            alert("Montant invalide.");
+            return;
+        }
+
         const transaction_id = "TOMBOLA-" + Date.now();
 
-        CinetPay.setConfig({
-            apikey: "<?= $api_key ?>",
-            site_id: "<?= $site_id ?>",
-            notify_url: "<?= $notify_url ?>"
-        });
+        // Debug des valeurs
+        
 
-        CinetPay.getCheckout({
-            transaction_id: transaction_id,
-            amount: amount,
-            currency: "XOF",
-            channels: method,
-            description: `Paiement de ${qty} ticket(s) pour Tombola CCEE`,
-            customer_name: "Client",
-            customer_surname: "Anonyme",
-            customer_phone_number: phone,
-            customer_email: "",
-            customer_address: "",
-            customer_city: "",
-            customer_country: "CI",
-            customer_state: "",
-            customer_zip_code: ""
-        });
-
-        CinetPay.waitResponse(function(data) {
-            if (data.status === "REFUSED") {
-                alert("Paiement refusé ou annulé");
-            }
-        });
-
-        CinetPay.onError(function(err) {
-            console.error(err);
-            alert("Erreur pendant le paiement !");
-        });
+        
     });
 
     updateTotal();
 </script>
+
 </body>
 </html>
