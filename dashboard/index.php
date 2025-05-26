@@ -1,3 +1,34 @@
+<?php
+session_start();
+require_once '../config.php';
+
+// Vérifier si l'utilisateur est connecté
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../auth/login.php');
+    exit;
+}
+
+// Récupérer les informations de l'utilisateur
+$stmt = $conn->prepare('SELECT fullname FROM users WHERE id = ?');
+$stmt->bind_param('i', $_SESSION['user_id']);
+$stmt->execute();
+$result = $stmt->get_result();
+$user = $result->fetch_assoc();
+
+// Récupérer le nombre de tickets de l'utilisateur
+$stmt = $conn->prepare('SELECT COUNT(*) as ticket_count FROM tickets WHERE user_id = ?');
+$stmt->bind_param('i', $_SESSION['user_id']);
+$stmt->execute();
+$result = $stmt->get_result();
+$tickets = $result->fetch_assoc();
+
+// Calculer les chances de gagner
+$stmt = $conn->prepare('SELECT COUNT(*) as total_tickets FROM tickets');
+$stmt->execute();
+$result = $stmt->get_result();
+$total_tickets = $result->fetch_assoc()['total_tickets'];
+$win_chance = ($total_tickets > 0) ? ($tickets['ticket_count'] / $total_tickets * 100) : 0;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,9 +53,9 @@
                     <a href="#" class="hover:text-yellow-300">Profil</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button id="logoutBtn" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
+                    <a href="../auth/logout.php" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
                         Déconnexion
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -33,7 +64,7 @@
     <!-- Dashboard -->
     <div class="max-w-6xl mx-auto px-4 py-8">
         <div class="mb-8">
-            <h1 class="text-3xl font-bold text-blue-900">Bonjour, <span id="userName">[Nom Utilisateur]</span> !</h1>
+            <h1 class="text-3xl font-bold text-blue-900">Bonjour, <span id="userName"><?php echo htmlspecialchars($user['fullname']); ?></span> !</h1>
             <p class="text-gray-600">Bienvenue sur votre espace personnel pour la tombola de l'Apothéose.</p>
         </div>
         
@@ -44,7 +75,8 @@
                 <div class="flex items-center justify-between">
                     <div>
                         <p class="text-gray-500">Tickets achetés</p>
-                        <h2 class="text-3xl font-bold" id="ticketsCount">0</h2>
+                        <h2 class="text-3xl font-bold" id="ticketsCount"><?php echo $tickets['ticket_count']; ?></h2>
+                        <p class="text-sm text-gray-500 mt-1">Chance de gagner : <span id="winChance"><?php echo number_format($win_chance, 2); ?>%</span></p>
                     </div>
                     <div class="bg-yellow-100 p-3 rounded-full">
                         <i class="fas fa-ticket-alt text-yellow-500 text-xl"></i>
@@ -80,7 +112,7 @@
                         <i class="fas fa-shopping-cart text-green-500 text-xl"></i>
                     </div>
                 </div>
-                <a href="../payment/index.html" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                <a href="../payment/index.php" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
                     Acheter maintenant
                 </a>
             </div>
@@ -90,7 +122,7 @@
         <div class="mb-8">
             <h2 class="text-2xl font-bold text-blue-900 mb-4">Actions rapides</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <a href="../payment/index.html" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
+                <a href="../payment/index.php" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
                     <div class="text-blue-500 mb-3">
                         <i class="fas fa-plus-circle text-3xl"></i>
                     </div>
@@ -98,7 +130,7 @@
                     <p class="text-sm text-gray-500">1000 FCFA par ticket</p>
                 </a>
                 
-                <a href="tickets.html" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
+                <a href="tickets.php" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
                     <div class="text-yellow-500 mb-3">
                         <i class="fas fa-ticket-alt text-3xl"></i>
                     </div>
@@ -106,7 +138,7 @@
                     <p class="text-sm text-gray-500">Voir vos participations</p>
                 </a>
                 
-                <a href="#" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
+                <!-- <a href="#" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
                     <div class="text-purple-500 mb-3">
                         <i class="fas fa-gift text-3xl"></i>
                     </div>
@@ -120,14 +152,14 @@
                     </div>
                     <h3 class="font-bold mb-1">Informations</h3>
                     <p class="text-sm text-gray-500">Règles et conditions</p>
-                </a>
+                </a> -->
             </div>
         </div>
         
         <!--  Countdown pour ce putain event  -->
         <div class="bg-blue-900 text-white rounded-xl shadow-lg p-6 mb-8">
             <h2 class="text-2xl font-bold mb-4">Tirage de la tombola</h2>
-            <p class="mb-6">Le tirage aura lieu lors de l'Apothéose le 30 juin 2025. Il vous reste :</p>
+            <p class="mb-6">Le tirage aura lieu lors de l'Apothéose le 08 juin 2025. Il vous reste :</p>
             
             <div class="grid grid-cols-4 gap-4 text-center">
                 <div class="bg-white/20 p-4 rounded-lg">
