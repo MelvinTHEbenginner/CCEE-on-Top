@@ -19,9 +19,9 @@
                 <a href="#" class="hover:text-yellow-300">Accueil</a>
                 <a href="#about" class="hover:text-yellow-300">À propos</a>
                 <a href="#prizes" class="hover:text-yellow-300">Lots</a>
-                <a href="auth/login.html" class="hover:text-yellow-300">Connexion</a>
+                <a href="auth/login.php" class="hover:text-yellow-300">Connexion</a>
             </div>
-            <a href="auth/register.html" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
+            <a href="auth/register.php" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
                 S'inscrire
             </a>
         </div>
