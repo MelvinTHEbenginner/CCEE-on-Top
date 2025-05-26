@@ -2,8 +2,8 @@
 // Ce fichier peut aussi être nommé index.php
 $api_key = '4223232976834922ac0cca7.40542965'; // Remplace par ta clé API CinetPay
 $site_id = '105896366'; // Remplace par ton site ID CinetPay
-$notify_url = 'https://votre-domaine.com/notification-cinetpay.php'; // Optionnel
-$return_url = 'https://votre-domaine.com/succes.php'; // Facultatif
+$notify_url = 'https://ccee.infinityfreeapp.com/notification-cinetpay.php'; // Optionnel
+$return_url = 'https://ccee.infinityfreeapp.com/succes.php'; // Facultatif
 ?>
 
 <!DOCTYPE html>
