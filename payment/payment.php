@@ -69,10 +69,7 @@
                         <input type="hidden" id="paymentMethod" name="paymentMethod" required>
                     </div>
 
-                    <div class="mb-6">
-                        <label for="phoneNumber" class="block text-gray-700 font-medium mb-2">Numéro de téléphone</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Ex: 0701234567" required class="w-full px-4 py-3 border rounded-lg focus:ring-blue-500">
-                    </div>
+                    
 
                     <div class="mb-6">
                         <label for="ticketQuantity" class="block text-gray-700 font-medium mb-2">Nombre de tickets</label>
@@ -94,15 +91,16 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300">
-                        Payer maintenant
-                    </button>
-                    <div id="selectedImageContainer" class="mt-6 hidden text-center">
-                        <img id="selectedImage" src="" alt="Méthode sélectionnée" class="h-24 mx-auto">
-                    </div>
-                    <div class="mt-6 text-center">
-                        <img id="selectedPaymentImage" src="../assets/images/orange-money.png" alt="Méthode sélectionnée" class="mx-auto h-16 hidden">
-                    </div>
+                    
+                   <div id="selectedImageContainer" class="mt-6 hidden text-center" >
+                    <img id="selectedImage" src="" alt="Méthode sélectionnée" class="h-24 mx-auto" style="height: 300px;">
+                   </div>
+                   <button type="submit" id="submitButton" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300 mt-5">
+                    <span id="buttonText">Réclamer mon ticket</span>
+                   </button>
+                   <p id="confirmationMessage" class="mt-4 text-green-600 font-medium hidden text-center">
+                        ✅ Vous recevrez votre ticket dans les plus brefs délais.
+                    </p>
                 </form>
             </div>
         </div>
@@ -130,9 +128,28 @@
     const summaryQuantity = document.getElementById('summaryQuantity');
     const summaryTotal = document.getElementById('summaryTotal');
     const unitPrice = 1000;
+    const submitButton = document.getElementById('submitButton');
+    const buttonText = document.getElementById('buttonText');
     const selectedImageContainer = document.getElementById('selectedImageContainer');
     const selectedImage = document.getElementById('selectedImage');
+    const confirmationMessage = document.getElementById('confirmationMessage');
 
+
+
+    submitButton.addEventListener('click', function () {
+        // Remplacer le texte par les points de chargement
+        buttonText.innerHTML = '<span class="animate-pulse">● ● ●</span>';
+        submitButton.disabled = true;
+
+        // Après 3 secondes
+        setTimeout(() => {
+            // Mettre l'emoji "accepté"
+            buttonText.textContent = '✅';
+
+            // Afficher le message en dessous
+            confirmationMessage.classList.remove('hidden');
+        }, 3500);
+    });
 
     paymentMethods.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -154,7 +171,7 @@
                 imagePath = '../assets/images/momo-selected.png';
                 break;
             case 'WAVE':
-                imagePath = '../assets/images/wave-selected.png';
+                imagePath = '../assets/images/codeqr_wave.jpg';
                 break;
         }
 
