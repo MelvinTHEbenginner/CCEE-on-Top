@@ -7,34 +7,13 @@ if (!isset($_SESSION['user_id'])) {
     header('Location: ../auth/login.php');
     exit;
 }
-
-// Récupérer les informations de l'utilisateur
-$stmt = $conn->prepare('SELECT fullname FROM users WHERE id = ?');
-$stmt->bind_param('i', $_SESSION['user_id']);
-$stmt->execute();
-$result = $stmt->get_result();
-$user = $result->fetch_assoc();
-
-// Récupérer le nombre de tickets de l'utilisateur
-$stmt = $conn->prepare('SELECT COUNT(*) as ticket_count FROM tickets WHERE user_id = ?');
-$stmt->bind_param('i', $_SESSION['user_id']);
-$stmt->execute();
-$result = $stmt->get_result();
-$tickets = $result->fetch_assoc();
-
-// Calculer les chances de gagner
-$stmt = $conn->prepare('SELECT COUNT(*) as total_tickets FROM tickets');
-$stmt->execute();
-$result = $stmt->get_result();
-$total_tickets = $result->fetch_assoc()['total_tickets'];
-$win_chance = ($total_tickets > 0) ? ($tickets['ticket_count'] / $total_tickets * 100) : 0;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau de bord - Tombola CCEE</title>
+    <title>Paiement - Tombola CCEE</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -48,12 +27,12 @@ $win_chance = ($total_tickets > 0) ? ($tickets['ticket_count'] / $total_tickets 
                     <span class="font-bold text-xl">CCEE </span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="hover:text-yellow-300 font-medium">Tableau de bord</a>
-                    <a href="tickets.html" class="hover:text-yellow-300">Mes tickets</a>
-                    <a href="#" class="hover:text-yellow-300">Profil</a>
+                    <a href="../dashboard/index.php" class="hover:text-yellow-300">Tableau de bord</a>
+                    <a href="../dashboard/tickets.php" class="hover:text-yellow-300">Mes tickets</a>
+                    <a href="../dashboard/profile.php" class="hover:text-yellow-300">Profil</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="../auth/logout.php" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
+                    <a href="../auth/logout.php" class="text-white hover:text-yellow-300">
                         Déconnexion
                     </a>
                 </div>
@@ -61,127 +40,214 @@ $win_chance = ($total_tickets > 0) ? ($tickets['ticket_count'] / $total_tickets 
         </div>
     </nav>
 
-    <!-- Dashboard -->
+    <!-- Contenu du paiement -->
     <div class="max-w-6xl mx-auto px-4 py-8">
         <div class="mb-8">
-            <h1 class="text-3xl font-bold text-blue-900">Bonjour, <span id="userName"><?php echo htmlspecialchars($user['fullname']); ?></span> !</h1>
-            <p class="text-gray-600">Bienvenue sur votre espace personnel pour la tombola de l'Apothéose.</p>
+            <h1 class="text-3xl font-bold text-blue-900">Acheter un ticket</h1>
+            <p class="text-gray-600">Participez à la tombola de l'Apothéose pour 1000 FCFA par ticket</p>
         </div>
         
-        <!--  -->
-        <div class="grid md:grid-cols-3 gap-6 mb-8">
-            <!-- Tickets  -->
-            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500">Tickets achetés</p>
-                        <h2 class="text-3xl font-bold" id="ticketsCount"><?php echo $tickets['ticket_count']; ?></h2>
-                        <p class="text-sm text-gray-500 mt-1">Chance de gagner : <span id="winChance"><?php echo number_format($win_chance, 2); ?>%</span></p>
-                    </div>
-                    <div class="bg-yellow-100 p-3 rounded-full">
-                        <i class="fas fa-ticket-alt text-yellow-500 text-xl"></i>
-                    </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Formulaire de paiement -->
+            <div class="md:col-span-2">
+                <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+                    <h2 class="text-xl font-semibold mb-4">Informations de paiement</h2>
+                    
+                    <form id="paymentForm">
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Méthode de paiement</label>
+                            <div class="grid grid-cols-3 gap-4">
+                                <button type="button" class="payment-method border-2 border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-500 transition duration-300" data-method="orange">
+                                    <img src="../assets/images/orange-money.png" alt="Orange Money" class="h-8 mb-2">
+                                    <span>Orange Money</span>
+                                </button>
+                                <button type="button" class="payment-method border-2 border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-500 transition duration-300" data-method="mtn">
+                                    <img src="../assets/images/mtn-momo.png" alt="MTN MoMo" class="h-8 mb-2">
+                                    <span>MTN MoMo</span>
+                                </button>
+                                <button type="button" class="payment-method border-2 border-gray-200 rounded-lg p-4 flex flex-col items-center hover:border-blue-500 transition duration-300" data-method="wave">
+                                    <img src="../assets/images/wave.png" alt="Wave" class="h-8 mb-2">
+                                    <span>Wave</span>
+                                </button>
+                            </div>
+                            <input type="hidden" id="paymentMethod" name="paymentMethod" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phoneNumber" class="block text-gray-700 font-medium mb-2">Numéro de téléphone</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" 
+                                   value=""
+                                   placeholder="Ex: 0701234567" required
+                                   class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="ticketQuantity" class="block text-gray-700 font-medium mb-2">Nombre de tickets</label>
+                            <div class="flex items-center">
+                                <button type="button" id="decreaseQuantity" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-l-lg">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" id="ticketQuantity" name="ticketQuantity" value="1" min="1" max="10"
+                                       class="w-16 text-center px-4 py-2 bg-white border-t border-b border-gray-300 focus:outline-none">
+                                <button type="button" id="increaseQuantity" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-r-lg">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700">Prix unitaire</span>
+                                <span class="font-medium">1 000 FCFA</span>
+                            </div>
+                            <div class="flex justify-between items-center font-bold text-lg">
+                                <span>Total à payer</span>
+                                <span id="totalAmount">1 000 FCFA</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                            Payer maintenant
+                        </button>
+                    </form>
                 </div>
-                <a href="tickets.html" class="mt-4 inline-block text-yellow-500 hover:text-yellow-600 font-medium">
-                    Voir mes tickets <i class="fas fa-arrow-right ml-1"></i>
-                </a>
-            </div>
-            
-            <!-- Chance  -->
-            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500">Chances de gagner</p>
-                        <h2 class="text-3xl font-bold" id="winChance">0%</h2>
-                    </div>
-                    <div class="bg-blue-100 p-3 rounded-full">
-                        <i class="fas fa-chart-line text-blue-500 text-xl"></i>
-                    </div>
-                </div>
-                <p class="mt-2 text-sm text-gray-500">Basé sur le nombre total de tickets vendus</p>
-            </div>
-            
-            
-            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-gray-500">Acheter un ticket</p>
-                        <h2 class="text-xl font-bold">1000 FCFA</h2>
-                    </div>
-                    <div class="bg-green-100 p-3 rounded-full">
-                        <i class="fas fa-shopping-cart text-green-500 text-xl"></i>
-                    </div>
-                </div>
-                <a href="../payment/index.php" class="mt-4 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
-                    Acheter maintenant
-                </a>
-            </div>
-        </div>
-        
-        
-        <div class="mb-8">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4">Actions rapides</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <a href="../payment/index.php" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
-                    <div class="text-blue-500 mb-3">
-                        <i class="fas fa-plus-circle text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold mb-1">Acheter un ticket</h3>
-                    <p class="text-sm text-gray-500">1000 FCFA par ticket</p>
-                </a>
                 
-                <a href="tickets.php" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
-                    <div class="text-yellow-500 mb-3">
-                        <i class="fas fa-ticket-alt text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold mb-1">Mes tickets</h3>
-                    <p class="text-sm text-gray-500">Voir vos participations</p>
-                </a>
-                
-                <!-- <a href="#" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
-                    <div class="text-purple-500 mb-3">
-                        <i class="fas fa-gift text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold mb-1">Lots à gagner</h3>
-                    <p class="text-sm text-gray-500">Découvrez les prix</p>
-                </a>
-                
-                <a href="#" class="bg-white hover:bg-gray-50 rounded-lg shadow p-6 text-center transition duration-300 border border-gray-200">
-                    <div class="text-green-500 mb-3">
-                        <i class="fas fa-info-circle text-3xl"></i>
-                    </div>
-                    <h3 class="font-bold mb-1">Informations</h3>
-                    <p class="text-sm text-gray-500">Règles et conditions</p>
-                </a> -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h2 class="text-xl font-semibold mb-4">Informations importantes</h2>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span>Chaque ticket coûte 1000 FCFA et vous donne une chance de gagner les lots.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span>Vous recevrez un QR Code unique pour chaque ticket acheté.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span>Le tirage aura lieu lors de l'Apothéose le 30 juin 2025.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                            <span>Vous devez présenter votre QR Code pour réclamer votre lot si vous gagnez.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        
-        <!--  Countdown pour ce putain event  -->
-        <div class="bg-blue-900 text-white rounded-xl shadow-lg p-6 mb-8">
-            <h2 class="text-2xl font-bold mb-4">Tirage de la tombola</h2>
-            <p class="mb-6">Le tirage aura lieu lors de l'Apothéose le 08 juin 2025. Il vous reste :</p>
             
-            <div class="grid grid-cols-4 gap-4 text-center">
-                <div class="bg-white/20 p-4 rounded-lg">
-                    <div class="text-3xl font-bold" id="countdown-days">00</div>
-                    <div class="text-sm uppercase">Jours</div>
-                </div>
-                <div class="bg-white/20 p-4 rounded-lg">
-                    <div class="text-3xl font-bold" id="countdown-hours">00</div>
-                    <div class="text-sm uppercase">Heures</div>
-                </div>
-                <div class="bg-white/20 p-4 rounded-lg">
-                    <div class="text-3xl font-bold" id="countdown-minutes">00</div>
-                    <div class="text-sm uppercase">Minutes</div>
-                </div>
-                <div class="bg-white/20 p-4 rounded-lg">
-                    <div class="text-3xl font-bold" id="countdown-seconds">00</div>
-                    <div class="text-sm uppercase">Secondes</div>
+            <!-- Résumé de la commande -->
+            <div>
+                <div class="bg-white rounded-xl shadow-md p-6 sticky top-8">
+                    <h2 class="text-xl font-semibold mb-4">Résumé de la commande</h2>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Prix unitaire</span>
+                            <span>1 000 FCFA</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Quantité</span>
+                            <span id="summaryQuantity">1</span>
+                        </div>
+                        <div class="border-t border-gray-200 pt-2 flex justify-between font-bold">
+                            <span>Total</span>
+                            <span id="summaryTotal">1 000 FCFA</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-medium mb-2">Lots à gagner</h3>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-trophy text-yellow-500 mr-2"></i>
+                                <span>1er Prix: Smartphone haut de gamme</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-medal text-gray-500 mr-2"></i>
+                                <span>2ème Prix: Tablette tactile</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-award text-amber-600 mr-2"></i>
+                                <span>3ème Prix: Bon d'achat 50 000 FCFA</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-gift text-purple-500 mr-2"></i>
+                                <span>Et bien d'autres lots...</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="../assets/js/dashboard.js"></script>
+    <!-- Modal de paiement -->
+    <div id="paymentModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-xl p-6 max-w-md w-full">
+            <div class="text-center">
+                <div class="mb-4">
+                    <i class="fas fa-spinner fa-spin text-4xl text-blue-500"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Traitement du paiement</h3>
+                <p class="text-gray-600 mb-4">Veuillez confirmer le paiement sur votre mobile. Ne quittez pas cette page.</p>
+                <div class="bg-blue-50 p-3 rounded-lg mb-4">
+                    <p class="font-medium" id="paymentInstruction">Confirmez le paiement de <span id="paymentAmount">1 000 FCFA</span> via <span id="paymentMethodDisplay">Orange Money</span></p>
+                </div>
+                <div class="h-1 w-full bg-gray-200 rounded-full overflow-hidden mb-4">
+                    <div id="paymentProgress" class="h-full bg-blue-500 w-0"></div>
+                </div>
+                <button id="cancelPayment" class="text-sm text-red-500 hover:text-red-700">Annuler le paiement</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de succès -->
+    <div id="successModal" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-xl p-6 max-w-md w-full text-center">
+            <div class="mb-4">
+                <i class="fas fa-check-circle text-5xl text-green-500"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Paiement réussi !</h3>
+            <p class="text-gray-600 mb-4">Votre achat de <span id="successQuantity">1</span> ticket(s) a été enregistré avec succès.</p>
+            <div class="mb-6">
+                <img id="successQrCode" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=SUCCESS" alt="QR Code" class="mx-auto border border-gray-200 p-2">
+                <p class="text-sm text-gray-500 mt-2">Ticket #<span id="successTicketId">0000</span></p>
+            </div>
+            <div class="flex flex-col space-y-3">
+                <a href="../dashboard/tickets.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                    Voir tous mes tickets
+                </a>
+                <a href="../dashboard/" class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 rounded-lg border border-gray-300 transition duration-300">
+                    Retour au tableau de bord
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/payment.js"></script>
+<script>
+// Mettre à jour le placeholder et la validation du numéro de téléphone selon la méthode de paiement
+document.querySelectorAll('.payment-method').forEach(method => {
+    method.addEventListener('click', function() {
+        const methodType = this.getAttribute('data-method');
+        const config = PAYMENT_CONFIG[methodType];
+        const phoneInput = document.getElementById('phoneNumber');
+        
+        phoneInput.placeholder = config.placeholder;
+        phoneInput.pattern = config.pattern;
+        
+        // Mettre à jour le texte d'aide
+        const helpText = document.createElement('div');
+        helpText.className = 'text-sm text-gray-500 mt-1';
+        helpText.textContent = `Format: ${config.placeholder}`;
+        
+        const existingHelp = phoneInput.parentElement.querySelector('.text-sm');
+        if (existingHelp) {
+            existingHelp.remove();
+        }
+        phoneInput.parentElement.appendChild(helpText);
+    });
+});
+</script>
 </body>
 </html>
