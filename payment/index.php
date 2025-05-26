@@ -1,3 +1,13 @@
+<?php
+session_start();
+require_once '../config.php';
+
+// Vérifier si l'utilisateur est connecté
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../auth/login.php');
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,14 +27,14 @@
                     <span class="font-bold text-xl">CCEE </span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="../dashboard/" class="hover:text-yellow-300">Tableau de bord</a>
-                    <a href="../dashboard/tickets.html" class="hover:text-yellow-300">Mes tickets</a>
-                    <a href="#" class="hover:text-yellow-300">Profil</a>
+                    <a href="../dashboard/index.php" class="hover:text-yellow-300">Tableau de bord</a>
+                    <a href="../dashboard/tickets.php" class="hover:text-yellow-300">Mes tickets</a>
+                    <a href="../dashboard/profile.php" class="hover:text-yellow-300">Profil</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button id="logoutBtn" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded-full transition duration-300">
+                    <a href="../auth/logout.php" class="text-white hover:text-yellow-300">
                         Déconnexion
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -66,7 +76,7 @@
                         <div class="mb-6">
                             <label for="phoneNumber" class="block text-gray-700 font-medium mb-2">Numéro de téléphone</label>
                             <input type="tel" id="phoneNumber" name="phoneNumber" 
-                                   value="${localStorage.getItem('userPhone') || ''}" 
+                                   value=""
                                    placeholder="Ex: 0701234567" required
                                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
@@ -96,7 +106,7 @@
                             </div>
                         </div>
                         
-                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300">
+                        <button type="submit" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
                             Payer maintenant
                         </button>
                     </form>
@@ -215,5 +225,29 @@
     </div>
 
     <script src="../assets/js/payment.js"></script>
+<script>
+// Mettre à jour le placeholder et la validation du numéro de téléphone selon la méthode de paiement
+document.querySelectorAll('.payment-method').forEach(method => {
+    method.addEventListener('click', function() {
+        const methodType = this.getAttribute('data-method');
+        const config = PAYMENT_CONFIG[methodType];
+        const phoneInput = document.getElementById('phoneNumber');
+        
+        phoneInput.placeholder = config.placeholder;
+        phoneInput.pattern = config.pattern;
+        
+        // Mettre à jour le texte d'aide
+        const helpText = document.createElement('div');
+        helpText.className = 'text-sm text-gray-500 mt-1';
+        helpText.textContent = `Format: ${config.placeholder}`;
+        
+        const existingHelp = phoneInput.parentElement.querySelector('.text-sm');
+        if (existingHelp) {
+            existingHelp.remove();
+        }
+        phoneInput.parentElement.appendChild(helpText);
+    });
+});
+</script>
 </body>
 </html>
