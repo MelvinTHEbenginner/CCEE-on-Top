@@ -1,4 +1,31 @@
 <!DOCTYPE html>
+<?php
+session_start();
+include '../config.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $stmt = $conn->prepare('SELECT * FROM users WHERE email = ?');
+    $stmt->bind_param('s', $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+    $stmt->close();
+
+    if ($user && password_verify($password, $user['password_hash'])) {
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['user_email'] = $user['email'];
+        $_SESSION['user_fullname'] = $user['fullname'];
+        $_SESSION['user_phone'] = $user['phone'];
+        header('Location: ../dashboard/index.php');
+        exit;
+    } else {
+        $error = 'Identifiants incorrects';
+    }
+}
+?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +43,7 @@
                 <p class="mt-2">Accédez à votre compte pour participer à la tombola</p>
             </div>
             
-            <form id="loginForm" class="space-y-6">
+            <form id="loginForm" class="space-y-6"  method="post">
                 <div>
                     <label for="email" class="block text-sm font-medium mb-1">Email</label>
                     <input type="email" id="email" name="email" required
@@ -29,14 +56,7 @@
                            class="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
                 </div>
                 
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-white/30 rounded">
-                        <label for="remember-me" class="ml-2 block text-sm">Se souvenir de moi</label>
-                    </div>
-                    
-                    
-                </div>
+                
                 
                 <div>
                     <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300">
@@ -48,12 +68,12 @@
             <div class="mt-6 text-center">
                 <p class="text-sm">
                     Pas encore de compte ?
-                    <a href="register.html" class="font-medium text-yellow-400 hover:text-yellow-300">S'inscrire</a>
+                    <a href="register.php" class="font-medium text-yellow-400 hover:text-yellow-300">S'inscrire</a>
                 </p>
             </div>
         </div>
     </div>
 
-    <script src="../assets/js/auth.js"></script>
+    <!-- <script src="../assets/js/auth.js"></script> -->
 </body>
 </html>
