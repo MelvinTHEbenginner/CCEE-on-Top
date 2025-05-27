@@ -43,9 +43,9 @@ $total_tickets = count($tickets);
                     <span class="font-bold text-xl">Communauté Catholique des Etudiants de l'ESATIC</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.php" class="hover:text-yellow-300">Tableau de bord</a>
-                    <a href="tickets.php" class="hover:text-yellow-300 font-medium">Mes tickets</a>
-                    <a href="profile.php" class="hover:text-yellow-300">Profil</a>
+                    <a href="../index.php" class="hover:text-yellow-300">Tableau de bord</a>
+                    <a href="../dashboard/tickets.php" class="hover:text-yellow-300 font-medium">Mes tickets</a>
+                    <a href="../dashboard/profile.php" class="hover:text-yellow-300">Profil</a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <a href="../auth/logout.php" class="text-white hover:text-yellow-300">

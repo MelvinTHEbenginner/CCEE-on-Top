@@ -35,7 +35,9 @@ CREATE TABLE IF NOT EXISTS `prizes` (
   `quantity` int NOT NULL,
   `image_url` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+;
 
 -- --------------------------------------------------------
 
@@ -55,7 +57,8 @@ CREATE TABLE IF NOT EXISTS `tickets` (
   UNIQUE KEY `ticket_code` (`ticket_code`),
   KEY `user_id` (`user_id`),
   KEY `prize_id` (`prize_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+;
 
 -- --------------------------------------------------------
 
@@ -74,7 +77,8 @@ CREATE TABLE IF NOT EXISTS `transactions` (
   `transaction_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+;
 
 -- --------------------------------------------------------
 
@@ -92,16 +96,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+;
 
 --
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `fullname`, `email`, `phone`, `password_hash`, `created_at`) VALUES
-(1, 'MBO MELVIN', 'meme@gmail.com', '00000000', '$2y$10$Ob7fM0HKymD3mz.lTeojYutslOXXPBZ.wrmknHdIS7BW.Vsk3fwWe', '2025-05-26 17:54:34'),
-(2, 'naruto', 'naruto@gmail.com', '0788045849', '$2y$10$uyNfgHAJ8XRa0guGGf3TU.mtdduB0CkVxwsIAwYI2nfRmtl0x3iEW', '2025-05-26 18:10:56');
-COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

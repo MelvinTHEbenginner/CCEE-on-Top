@@ -1,7 +1,23 @@
 <?php
-// Ce fichier peut aussi être nommé index.php
+session_start();
+
+// Vérification que l'utilisateur est connecté
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../auth/login.php');
+    exit();
+}
+
+$user_id = $_SESSION['user_id'];
+
+
+
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
+
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -95,9 +111,11 @@
                    <div id="selectedImageContainer" class="mt-6 hidden text-center" >
                     <img id="selectedImage" src="" alt="Méthode sélectionnée" class="h-24 mx-auto" style="height: 300px;">
                    </div>
-                   <button type="submit" id="submitButton" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300 mt-5">
-                    <span id="buttonText">Réclamer mon ticket</span>
-                   </button>
+                  <button type="submit" id="submitButton" class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-4 rounded-lg transition duration-300 mt-5">
+  <span id="buttonText">Réclamer mon ticket (Scannez pour payer)</span>
+</button>
+<div id="response-message" class="text-sm text-green-600 mt-3"></div>
+
                    <p id="confirmationMessage" class="mt-4 text-green-600 font-medium hidden text-center">
                         ✅ Vous recevrez votre ticket dans les plus brefs délais.
                     </p>
@@ -136,20 +154,32 @@
 
 
 
-    submitButton.addEventListener('click', function () {
-        // Remplacer le texte par les points de chargement
-        buttonText.innerHTML = '<span class="animate-pulse">● ● ●</span>';
-        submitButton.disabled = true;
+    document.getElementById("submitButton").addEventListener("click", function (e) {
+  e.preventDefault(); // Empêche la soumission de formulaire classique
 
-        // Après 3 secondes
-        setTimeout(() => {
-            // Mettre l'emoji "accepté"
-            buttonText.textContent = '✅';
+  // On désactive le bouton pour éviter les doublons
+  document.getElementById("submitButton").disabled = true;
+  document.getElementById("buttonText").textContent = "Traitement...";
 
-            // Afficher le message en dessous
-            confirmationMessage.classList.remove('hidden');
-        }, 3500);
-    });
+  fetch("reclamer_ticket.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "reclamer_ticket=1"
+  })
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("response-message").innerText = data;
+    document.getElementById("submitButton").disabled = false;
+    document.getElementById("buttonText").textContent = "Réclamer mon ticket (Scannez pour payer)";
+  })
+  .catch(error => {
+    document.getElementById("response-message").innerText = "Erreur serveur.";
+    document.getElementById("submitButton").disabled = false;
+    document.getElementById("buttonText").textContent = "Réclamer mon ticket (Scannez pour payer)";
+  });
+});
 
     paymentMethods.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -165,10 +195,10 @@
         let imagePath = '';
         switch(method) {
             case 'OM':
-                imagePath = '../assets/images/om-selected.png';
+                imagePath = '../assets/images/omcode_qr.jpg';
                 break;
             case 'MOMO':
-                imagePath = '../assets/images/momo-selected.png';
+                imagePath = '../assets/images/momo-selected.p';
                 break;
             case 'WAVE':
                 imagePath = '../assets/images/codeqr_wave.jpg';
