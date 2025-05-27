@@ -113,7 +113,7 @@ $win_chance = ($total_tickets > 0) ? ($tickets['ticket_count'] / $total_tickets 
                     </div>
                 </div>
                 <div class="mt-4 text-center">
-                    <a href="../payment/" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                    <a href="../payment/payment.php" class="inline-block bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
                         Acheter maintenant
                     </a>
                 </div>
