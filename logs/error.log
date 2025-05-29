@@ -1,0 +1,1015 @@
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:34:09 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:34:09 UTC] PHP Stack trace:
+[27-May-2025 16:34:09 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:34:09 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:34:09 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:09 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:34:13 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:34:13 UTC] PHP Stack trace:
+[27-May-2025 16:34:13 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:34:13 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:34:13 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:34:13 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:34:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 6
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:24 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:24 UTC] PHP Stack trace:
+[27-May-2025 16:35:24 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:24 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:24 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:24 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:25 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:25 UTC] PHP Stack trace:
+[27-May-2025 16:35:25 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:35:25 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:35:25 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:25 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php on line 6
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:27 UTC] PHP Stack trace:
+[27-May-2025 16:35:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:27 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:29 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:29 UTC] PHP Stack trace:
+[27-May-2025 16:35:29 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:35:29 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:35:29 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:29 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 6
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:33 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:33 UTC] PHP Stack trace:
+[27-May-2025 16:35:33 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:35:33 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:35:33 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:33 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:34 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:34 UTC] PHP Stack trace:
+[27-May-2025 16:35:34 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:34 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:34 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:34 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:39 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:39 UTC] PHP Stack trace:
+[27-May-2025 16:35:39 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:0
+[27-May-2025 16:35:39 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:3
+[27-May-2025 16:35:39 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:39 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:35:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\export_tickets.php on line 6
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:35:56 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:35:56 UTC] PHP Stack trace:
+[27-May-2025 16:35:56 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:35:56 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:35:56 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:35:56 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:37:41 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:37:41 UTC] PHP Stack trace:
+[27-May-2025 16:37:41 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:37:41 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:37:41 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:41 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:37:43 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:37:43 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:43 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:37:43 UTC] PHP Warning:  Undefined array key "rejected" in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 254
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP Warning:  Undefined variable $search in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 276
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 276
+[27-May-2025 16:37:43 UTC] PHP Stack trace:
+[27-May-2025 16:37:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:37:43 UTC] PHP   2. htmlspecialchars($string = NULL) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:276
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:37:44 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:37:44 UTC] PHP Stack trace:
+[27-May-2025 16:37:44 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:37:44 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:37:44 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:37:44 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:37:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function requireAdmin() in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:6
+Stack trace:
+#0 {main}
+  thrown in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php on line 6
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:00 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:00 UTC] PHP Stack trace:
+[27-May-2025 16:46:00 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:00 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:00 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:00 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:02 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:02 UTC] PHP Stack trace:
+[27-May-2025 16:46:02 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:0
+[27-May-2025 16:46:02 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\dashboard.php:3
+[27-May-2025 16:46:02 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:02 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:03 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:3
+[27-May-2025 16:46:03 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:03 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:03 UTC] PHP Warning:  Undefined array key "rejected" in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 254
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP Warning:  Undefined variable $search in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 276
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php on line 276
+[27-May-2025 16:46:03 UTC] PHP Stack trace:
+[27-May-2025 16:46:03 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:0
+[27-May-2025 16:46:03 UTC] PHP   2. htmlspecialchars($string = NULL) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\transactions.php:276
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:04 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:04 UTC] PHP Stack trace:
+[27-May-2025 16:46:04 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:04 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:04 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:04 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:05 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:05 UTC] PHP Stack trace:
+[27-May-2025 16:46:05 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:05 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:05 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:05 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:16 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:16 UTC] PHP Stack trace:
+[27-May-2025 16:46:16 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:0
+[27-May-2025 16:46:16 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\tickets.php:3
+[27-May-2025 16:46:16 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:16 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:19 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:19 UTC] PHP Stack trace:
+[27-May-2025 16:46:19 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:0
+[27-May-2025 16:46:19 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\admin\users.php:3
+[27-May-2025 16:46:19 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:19 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:23 UTC] PHP Stack trace:
+[27-May-2025 16:46:23 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:23 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:23 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:23 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:4
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 24
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.cookie_lifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:24
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 25
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.gc_maxlifetime', $value = 86400) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:25
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 26
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.use_strict_mode', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:26
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 27
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.use_only_cookies', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:27
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 28
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.cookie_secure', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:28
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 29
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.cookie_httponly', $value = 1) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:29
+[27-May-2025 16:46:27 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php on line 30
+[27-May-2025 16:46:27 UTC] PHP Stack trace:
+[27-May-2025 16:46:27 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:0
+[27-May-2025 16:46:27 UTC] PHP   2. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\dashboard\index.php:3
+[27-May-2025 16:46:27 UTC] PHP   3. require_once() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:17
+[27-May-2025 16:46:27 UTC] PHP   4. ini_set($option = 'session.use_trans_sid', $value = 0) C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\config.php:30
+[27-May-2025 16:52:43 UTC] PHP Fatal error:  Cannot redeclare requireAdmin() (previously declared in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:7) in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\includes\auth_functions.php on line 7
+[27-May-2025 16:52:43 UTC] PHP Stack trace:
+[27-May-2025 16:52:43 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:52:48 UTC] PHP Fatal error:  Cannot redeclare requireAdmin() (previously declared in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:7) in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\includes\auth_functions.php on line 7
+[27-May-2025 16:52:48 UTC] PHP Stack trace:
+[27-May-2025 16:52:48 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
+[27-May-2025 16:52:51 UTC] PHP Fatal error:  Cannot redeclare requireAdmin() (previously declared in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\init.php:7) in C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\includes\auth_functions.php on line 7
+[27-May-2025 16:52:51 UTC] PHP Stack trace:
+[27-May-2025 16:52:51 UTC] PHP   1. {main}() C:\wamp64\www\CCEE-on-Top-main\CCEE-on-Top-main\auth\login.php:0
